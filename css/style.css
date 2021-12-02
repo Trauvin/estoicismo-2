@@ -136,12 +136,43 @@ header {
 
 .estoicos-grid {
   padding: 10px calc((100% - 1200px) / 2);
-  text-align: center;
   font-family: "Open Sans", sans-serif;
+  text-align: center;
   color: #fff;
 }
 
 .estoicos h3 {
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.estoicos p {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.principais-obras {
+  width: 660px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.principais-obras dt {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.principais-obras dt::before {
+  content: "";
+  width: 15px;
+  height: 10px;
+  background: #fff;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.principais-obras dt::after {
+  content: "▼";
+  margin-left: 10px;
 }
