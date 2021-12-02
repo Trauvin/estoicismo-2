@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header/Intro */
+header {
+  background: url("../img/bg-header.png") no-repeat center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+
+.intro {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #282f70;
+  margin-top: 20px;
+}
+
+.list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.list a {
+  padding: 10px;
+  color: #282f70;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.quote p {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  color: #282f70;
+}
+
+.quote cite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #282f70;
+  font-weight: bold;
+}
+
+/* Estoicismo */
+.estoicismo {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 20px;
+  padding: 10px calc((100% - 1200px) / 2);
+}
+
+.subtitle {
+  grid-column: 1/9;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #282f70;
+}
+
+.subtitle::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  display: block;
+  background: #282f70;
+  margin: 0 auto;
+}
+
+.estoicismo img {
+  grid-column: 1;
+}
+
+.estoicismo p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  grid-column: 2;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Estoicos */
+.estoicos {
+  background: #282f70;
+  height: 1000px;
+}
+
+.estoicos h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.estoicos h1::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.estoicos-grid {
+  padding: 10px calc((100% - 1200px) / 2);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.estoicos h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
