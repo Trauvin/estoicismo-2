@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -38,33 +40,48 @@
   <section class="estoicos">
     <div class="estoicos-grid">
       <h1>Estoicos</h1>
-      <div class="seneca">
-        <img src="img/seneca.png" alt="Seneca">
-        <h3>Sêneca</h3>
-        <p>Lúcio Aneu Sêneca foi um filósofo estoico e um dos mais célebres advogados, 
-          escritores e intelectuais do Império Romano. Conhecido também como Séneca 
-          (ou Sêneca), o Moço, o Filósofo, ou ainda, o Jovem, sua obra literária e filosófica
-          , tida como modelo do pensador estoico durante o Renascimento, 
-          inspirou o desenvolvimento da tragédia na dramaturgia europeia renascentista. 
-        </p>
-        <div class="principais-obras">
-          <dl>
-            <dt>Principias Obras</dt>
-            <ul class="livros">
-              <li>Sobre a brevidade da vida.</li>
-              <li>Édipo</li>
-              <li>Tiestes</li>
-              <li>Fedra</li>
-            </ul>
-            <dt>Influenciadores</dt>
-            <ul>
-              <li>Platão</li>
-              <li>Epicuro</li>
-              <li>Zenão</li>
-            </ul>
-            <dt>Tempo de vida</dt>
-            <dd>4.ac - 65.dc</dd>
-          </dl>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/seneca.png" alt="Seneca">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/marco-aurelio.jpg" alt="Marco Aurélio">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/epicteto.jpg" alt="Epiteto">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div>
+        <div class="seneca">
+          <h3>Sêneca</h3>
+          <p>Lúcio Aneu Sêneca foi um filósofo estoico e um dos mais célebres advogados, 
+            escritores e intelectuais do Império Romano. Conhecido também como Séneca 
+            (ou Sêneca), o Moço, o Filósofo, ou ainda, o Jovem, sua obra literária e filosófica
+            , tida como modelo do pensador estoico durante o Renascimento, 
+            inspirou o desenvolvimento da tragédia na dramaturgia europeia renascentista. 
+          </p>
+          <div class="principais-obras">
+            <dl>
+              <dt>Principias Obras</dt>
+              <ul class="livros">
+                <li>Sobre a brevidade da vida.</li>
+                <li>Édipo</li>
+                <li>Tiestes</li>
+                <li>Fedra</li>
+              </ul>
+              <dt>Influenciadores</dt>
+              <ul>
+                <li>Platão</li>
+                <li>Epicuro</li>
+                <li>Zenão</li>
+              </ul>
+              <dt>Tempo de vida</dt>
+              <dd>4.ac - 65.dc</dd>
+            </dl>
+          </div>
         </div>
       </div>
     </div>
@@ -83,6 +100,9 @@
   <footer class="footer">
     <p>@Alguns direitos quase reservados</p>
   </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <script src="js/script.js" type="module"></script>
 </body>
 </html>
